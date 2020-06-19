@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/21875b1641.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-bars fa-lg" id="toggle"></i>
+            <h3 class="title">Notes</h3>
+        </div>
+        <div class="container-two">
+            <div class="menu active">
+                <h3>WORKSPACE</h3>
+                <div class="menu-list">
+                    <ul class="menu-ul">
+                        <li>
+                            <div class="list notes active">
+                                <i class="fas fa-caret-right"></i>
+                                <p class="title-notes">Notes</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list tasks">
+                                <i class="fas fa-caret-right"></i>
+                                <p class="title-tasks">Tasks</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list to-do">
+                                <i class="fas fa-caret-right"></i>
+                                <p class="title-todo">To-do List</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-notes">
+                    <div class="notes-header">
+                        <div class="icon-title-notes">
+                            <i class="far fa-sticky-note fa-2x"></i>
+                            <h1>Notes</h1>
+                        </div>
+                        <div class="new-item-notes">
+                            <p>New item</p>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="title" class="note-input">
+                        <i class="fas fa-plus-square btn-note"></i>
+                    </div>
+                    <div class="notes-container"></div>
+                    <div class="trash" id="trash-notes">
+                        <i class="fas fa-trash" id="fa-trash-notes"></i>
+                        <p>Trash</p>
+                    </div>
+                </div>
+
+                <div class="content-tasks hide">
+                    <div class="tasks-header">
+                        <i class="fas fa-tasks fa-2x"></i>
+                        <h1>Tasks</h1>
+                    </div>
+                    <div class="tasks-container">
+                        <div class="status">
+                            <div class="no-status sta">
+                                <div class="no-status-header sta-header">
+                                    <h3>Tasks sem status</h3>
+                                    <p class="count-no-status count-header">0</p>
+                                </div>
+                                <div class="no-status-container"></div>
+                                <div class="input-tasks">
+                                    <form action="" class="form-status">
+                                        <i class="fas fa-plus"></i>
+                                        <input type="text" placeholder="Add item" class="input-no-status">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="in-progress sta">
+                                <div class="in-progress-header sta-header">
+                                    <h3>In Progress</h3>
+                                    <p class="count-in-progress count-header">0</p>
+                                </div>
+                                <div class="in-progress-container"></div>
+                            </div>
+                            <div class="completed sta">
+                                <div class="completed-header sta-header">
+                                    <h3>Completed</h3>
+                                    <p class="count-completed count-header">0</p>
+                                </div>
+                                <div class="completed-container">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trash" id="trash-tasks">
+                        <i class="fas fa-trash" id="fa-trash-tasks"></i>
+                        <p>Trash</p>
+                    </div>
+                </div>
+
+                <div class="content-to-do hide">
+                    <div class="to-do-header">
+                        <i class="fas fa-list fa-2x"></i>
+                        <h1>To-do List</h1>
+                    </div>
+                    <div class="to-do-container">
+                        <div class="todo-list">
+
+                        </div>
+                        <div class="input-to-do">
+                            <form action="" class="form-to-do">
+                                <i class="fas fa-plus"></i>
+                                <input type="text" placeholder="new to-do" class="input-to-do-list">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="trash" id="trash-to-do">
+                        <i class="fas fa-trash" id="fa-trash-to-do"></i>
+                        <p>Trash</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
